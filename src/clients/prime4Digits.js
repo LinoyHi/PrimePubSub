@@ -5,7 +5,7 @@ function fourDigits(num){
 }
 
 function checkAmountDigits(num,tillDigit=4){
-    if(tillDigit>0){return check(Math.floor(num/10),tillDigit-1)}
+    if(tillDigit>1){return checkAmountDigits(Math.floor(num/10),tillDigit-1)}
     else{
         if(num>0){
             return true
