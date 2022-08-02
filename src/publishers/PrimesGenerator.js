@@ -18,8 +18,9 @@ class PrimeGenerator extends MyEvent{
     startNextPrimeTill(num=1,){
         let i = 1
         while(i<=num){
-            setTimeout(this.emmit('getPrimes', this.nextPrime(i)),i*1000)
-            i++
+            const next =  this.nextPrime(i)
+            setTimeout(this.emmit('getPrimes', next),i*1000)
+            i= next
         }
     }
 }
