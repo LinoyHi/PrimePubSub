@@ -1,3 +1,3 @@
 import { run } from "./src/app.js";
 
-run(2000)
+run(1000)
