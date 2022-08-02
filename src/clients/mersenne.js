@@ -1,12 +1,6 @@
-function mersenne(num,newnum=num+1){
-    if(newnum%2==0){
-        if(newnum==2){
-            console.log(`this number - ${num} is a Mersenne number`)
-        }
-        else{
-            mersenne(num,newnum/2)
-        }
-    }
+function mersenne(num){
+    const calc = Math.log2(num+1)
+    calc === parseInt(calc)? console.log(`this number - ${num} is a Mersenne number`):''
 }
 
 export default mersenne
