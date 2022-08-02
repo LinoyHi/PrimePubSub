@@ -17,10 +17,12 @@ class PrimeGenerator extends MyEvent{
 
     startNextPrimeTill(num=1,){
         let i = 1
+        count=1
         while(i<=num){
             const next =  this.nextPrime(i)
-            setTimeout(this.emmit('getPrimes', next),i*1000)
+            setTimeout(this.emmit('getPrimes', next),count*1000)
             i= next
+            count++
         }
     }
 }
