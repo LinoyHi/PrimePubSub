@@ -1,3 +1,3 @@
-import { primeGenerator } from "./src/app";
+import { run } from "./src/app.js";
 
-primeGenerator.startNextPrimeTill(3000)
+run(2000)

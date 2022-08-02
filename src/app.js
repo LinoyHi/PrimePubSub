@@ -8,4 +8,6 @@ primeGenerator.on('getPrimes', (num)=>mersenne(num))
 primeGenerator.on('getPrimes', (num)=>endsWithOne(num))
 primeGenerator.on('getPrimes', (num)=>fourDigits(num))
 
-primeGenerator.startNextPrimeTill(3000)
+export function run(num){
+    primeGenerator.startNextPrimeTill(num)
+}
