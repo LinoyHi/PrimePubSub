@@ -11,5 +11,5 @@ Create a prime number "service" that emits the next prime number on every second
 Create 3 "clients":
 
  1. Prime1 - when a prime number ends with 1, prints it with red color. 
- 2. Mersenne - needs to know when a new prime number is out there and check whether it's a Mersenne number. If it is, it'll print that out.
- 3. prime4Digits - If a prime number is 4 digits, print the subtraction of it from 10,000 (like if prime number is 9973, then print 27).
+ 2. prime4Digits - If a prime number is 4 digits, print the subtraction of it from 10,000 (like if prime number is 9973, then print 27).
+ 3. Mersenne - needs to know when a new prime number is out there and check whether it's a Mersenne number. If it is, it'll print that out
